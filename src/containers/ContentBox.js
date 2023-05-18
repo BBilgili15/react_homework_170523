@@ -1,8 +1,8 @@
 import Header from '../components/Header'
 import FilmList from '../components/FilmList'
 import Footer from '../components/Footer'
-
 import {useState} from 'react'
+
 const ContentBox = () => {
 
   const [films, setFilms] = useState(
@@ -24,7 +24,8 @@ const ContentBox = () => {
       },
       {
         id: 4,
-        name: "The Lego Movie 2: The Second Part", url: "https://www.imdb.com/title/tt3513498/?ref_=rlm"
+        name: "The Lego Movie 2: The Second Part", 
+        url: "https://www.imdb.com/title/tt3513498/?ref_=rlm"
       },
       {
         id: 5,
@@ -46,7 +47,6 @@ const ContentBox = () => {
   return (
     <div className='content-box'>
       <Header addFilm={addFilm}></Header>
-      <div></div>
       <FilmList films={films} ></FilmList>
       <Footer></Footer>
     </div>

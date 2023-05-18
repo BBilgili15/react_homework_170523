@@ -4,13 +4,15 @@ const FilmList = ({films}) => {
 
   const filmComponents = films.map((film) => {
     return (
-      <FilmItem key={film.id} name={film.name} url={film.url}></FilmItem>
+      <FilmItem key={film.id} film={film}></FilmItem>
     )
   })
 
 
   return (
-    <ul className="film-list">{filmComponents}</ul>
+    <ul className="film-list">
+      {filmComponents}
+    </ul>
   )
 }
 

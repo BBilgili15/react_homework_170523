@@ -34,6 +34,7 @@ const Header = ({addFilm}) => {
         <input type="text" placeholder="URL..." value={url} onChange={handleURLChange}></input>
         <input type="submit" value="Post"></input>
       </form>
+      
     </div>
   )
 }
